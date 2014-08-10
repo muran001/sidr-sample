@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Include jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include the Sidr JS -->
+    <script src="./js/jquery.sidr.min.js"></script>
+    <!-- Include Sidr bundled CSS theme -->
+    <link rel="stylesheet" href="./css/jquery.sidr.dark.css">
+  </head>
+  <body>
+    <div style='text-align: center;'>
+      <a id="left-menu" href="#left-menu">Left Menu</a> 
+      <a id="right-menu" href="#right-menu">Right Menu</a>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('#left-menu').sidr({
+          name: 'sidr-left',
+          side: 'left' // By default
+        });
+        $('#right-menu').sidr({
+          name: 'sidr-right',
+          side: 'right'
+        });
+    });
+    </script>
+
+  </body>
+</html>
